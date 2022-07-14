@@ -1,0 +1,11 @@
+*.log*
+node_modules
+ngrok.exe
+amo_token.json
+.idea
+autoname_widget/__MACOSX
+*.zip
+images/
+templates/
+*.html
+authclients/

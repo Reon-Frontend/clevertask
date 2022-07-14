@@ -1,0 +1,26 @@
+{
+  "name": "packege",
+  "version": "1.0.0",
+  "description": "for_test_task",
+  "main": "index.js",
+  "scripts": {
+    "test": "test"
+  },
+  "author": "Anton Ivanov",
+  "license": "ISC",
+  "devDependencies": {
+    "axios": "^0.21.4",
+    "axios-retry": "3.1.9",
+    "express": "4.17.1",
+    "fs": "0.0.1-security",
+    "lodash": "4.17.21",
+    "log4js": "^6.5.2",
+    "moment": "^2.27.0",
+    "mongoose": "^5.9.25",
+    "mysql": "^2.18.1",
+    "node-cron": "^2.0.3",
+    "querystring": "^0.2.0",
+    "telegraf": "^3.38.0",
+    "uuid": "^8.3.0"
+  }
+}
