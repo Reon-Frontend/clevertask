@@ -39,20 +39,8 @@ app.get("/delete", (req) => {
 });
 
 app.post("/hook", async (req) => {
-    // Получаем информацию о сделке и главном контакте сделки
     try {
-        const subDomain = req.body.subdomain;
-        const api = new Api(subDomain);
-        const dealID = req.body.event.data.id;
-        const deal = await api.getDeal(dealID, ['contacts']);
-        const dealContacts = deal._embedded.contacts
-        const dealCompany = deal._embedded.companies.length
-            ? await api.getCompany(deal._embedded.companies[0].id)
-            : null;
-        const dealMainContactID = dealContacts.length
-            ? dealContacts.find((item) => item.is_main).id
-            : null;
-        const contact = dealMainContactID ? await api.getContact(dealMainContactID) : null;
+        //Обработка webhook
     } catch (err) {
         logger.error(err);
     }

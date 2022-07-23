@@ -1,76 +1,8 @@
 /*
     стили для окна в digital-pipeline
 */
-.widget_settings_block__controls__custom.text-input.reon-leads-autoname-widget__settings-text-input {
+.widget_settings_block__controls__custom.text-input.reon-leads-clevertask-widget__settings-text-input {
   display: none;
-}
-.reon-leads-autoname-widget__settings-textarea {
-  width: 100%;
-}
-.reon-leads-autoname-widget__settings-fields-wrapper {
-  width: 100%;
-  height: 120px;
-  border: 1px solid #dbdedf;
-  margin-top: 10px;
-  overflow-y: auto;
-}
-
-.reon-leads-autoname-widget__add-field-button {
-  margin: 3px 3px;
-  padding: 3px 10px;
-  border-radius: 10px;
-  background: #1c93e3;
-  color: #ffffff;
-  cursor: pointer;
-}
-
-.reon-leads-autoname-widget__add-field-button:hover {
-  background-color: #177ec4;
-}
-
-.reon-leads-autoname-widget__search-fields-wrapper {
-  display: flex;
-  align-items: center;
-  justify-content: space-around;
-}
-
-.reon-leads-autoname-widget__search-fields-reset {
-  position: relative;
-  width: 20px;
-  height: 20px;
-  cursor: pointer;
-}
-
-.reon-leads-autoname-widget__search-fields-reset::before,
-.reon-leads-autoname-widget__search-fields-reset::after {
-  content: '';
-  position: absolute;
-  width: 2px;
-  height: 20px;
-  background-color: #dbdedf;
-  left: 50%;
-  top: 0;
-}
-
-.reon-leads-autoname-widget__search-fields-reset::before {
-  rotate: 45deg;
-}
-
-.reon-leads-autoname-widget__search-fields-reset::after {
-  rotate: -45deg;
-}
-
-.reon-leads-autoname-widget__search-fields-reset:hover::before,
-.reon-leads-autoname-widget__search-fields-reset:hover::after {
-  background-color: red;
-}
-
-.reon-leads-autoname-widget__settings-fields-type-dp-title {
-  margin-bottom: 15px;
-}
-
-.reon-leads-autoname-widget__settings-fields-type-dp-select {
-  margin-bottom: 5px;
 }
 .visually-hidden {
   position: absolute;

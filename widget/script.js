@@ -130,35 +130,7 @@ define(['jquery', 'underscore', 'twigjs'], function ($, _, Twig) {
             }, this),
             dpSettings: function () {
                 const form = document.querySelector('.digital-pipeline__edit-forms')
-                const formFieldsBlock = form.querySelector(
-                    '#widget_settings__fields_wrapper'
-                )
-                const nameInput = formFieldsBlock.querySelector(
-                    "input[name='clevertask']"
-                )
-                nameInput.classList.add(
-                    'reon-leads-clevertask-widget__settings-text-input'
-                )
-                const nameWrapper = nameInput.parentNode.parentNode
-                renderContent(nameWrapper, AutonameWidgetTemplate.getTextArea(self))
-                const nameTextArea = nameWrapper.querySelector(
-                    '.reon-leads-clevertask-widget__text-messages-dp'
-                )
-                if (nameInput.value.length > 0) {
-                    nameTextArea.value = nameInput.value
-                }
-                nameTextArea.addEventListener('input', (e) => {
-                    nameInput.value = e.target.value
-                })
 
-                renderContent(
-                    nameWrapper,
-                    AutonameWidgetTemplate.fieldsTypeSelectWrapper
-                )
-                renderContent(
-                    nameWrapper,
-                    AutonameWidgetTemplate.getFieldsTypeSelect(self)
-                )
             },
             bind_actions: function () {
                 return true
@@ -185,8 +157,8 @@ define(['jquery', 'underscore', 'twigjs'], function ($, _, Twig) {
                 globalSettingInputTermsOfUse.classList.add('visually-hidden')
                 globalSettingsTermsOfUseTitle.classList.add('visually-hidden')
                 const checkboxTemplateParams = {
-                    class_name: 'reon-cities-widget-checkbox',
-                    input_class_name: 'reon-cities-widget-checkbox-terms-of-use',
+                    class_name: 'reon-clevertask-widget-checkbox',
+                    input_class_name: 'reon-clevertask-widget-checkbox-terms-of-use',
                     name: 'agreement',
                     text: 'Я прочитал(-а)',
                     value: globalSettingInputTermsOfUse.value,
@@ -198,7 +170,7 @@ define(['jquery', 'underscore', 'twigjs'], function ($, _, Twig) {
                 )
                 renderContent(globalSettingsTermOfUseBlock, checkboxTemplate)
                 const termsOfUseLabel = globalSettingsTermOfUseBlock.querySelector(
-                    '.reon-cities-widget-checkbox'
+                    '.reon-clevertask-widget-checkbox'
                 )
                 const textBlockOfTerms = termsOfUseLabel.querySelector(
                     '.control-checkbox__text'
@@ -212,7 +184,7 @@ define(['jquery', 'underscore', 'twigjs'], function ($, _, Twig) {
                     ' соглашения и согласен(-на) с условиями'
                 )
                 globalSettingsblock
-                    .querySelector('.reon-cities-widget-checkbox')
+                    .querySelector('.reon-clevertask-widget-checkbox')
                     .addEventListener('change', (e) => {
                         globalSettingInputTermsOfUse.value = e.target.checked
                     })
